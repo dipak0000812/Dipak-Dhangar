@@ -61,7 +61,7 @@ const Achievements = () => {
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id as any)}
-                                className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-all ${activeTab === tab.id
+                                className={`flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-medium transition-all ${activeTab === tab.id
                                     ? "bg-accent text-background shadow-[0_0_15px_rgba(0,212,255,0.4)]"
                                     : "bg-white/5 border border-white/10 text-secondary hover:bg-white/10"
                                     }`}

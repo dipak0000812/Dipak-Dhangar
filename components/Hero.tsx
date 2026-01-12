@@ -119,7 +119,7 @@ const Hero = () => {
                                 <span className="text-accent font-semibold tracking-widest text-sm uppercase">Welcome to my world</span>
                             </div>
 
-                            <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
+                            <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
                                 Hi, I am{" "}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 pb-2 inline-block">
                                     Dipak
@@ -175,13 +175,13 @@ const Hero = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.6 }}
-                            className="flex flex-wrap items-center gap-6 pt-2"
+                            className="flex flex-wrap items-center gap-4 md:gap-6 pt-2"
                         >
                             <motion.a
                                 href="mailto:dhangardip09@gmail.com"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="relative flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:border-accent/50 transition-all text-white group font-medium overflow-hidden"
+                                className="relative flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:border-accent/50 transition-all text-white group font-medium overflow-hidden"
                             >
                                 <Mail size={20} className="text-accent group-hover:rotate-12 transition-transform" />
                                 <span className="relative z-10">Let's Talk</span>
@@ -192,7 +192,7 @@ const Hero = () => {
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="relative flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:border-accent/50 transition-all text-white group font-medium overflow-hidden"
+                                className="relative flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:border-accent/50 transition-all text-white group font-medium overflow-hidden"
                             >
                                 <ExternalLink size={20} className="text-accent group-hover:rotate-45 transition-transform" />
                                 <span className="relative z-10">Resume</span>
@@ -201,7 +201,7 @@ const Hero = () => {
                                 href="#projects"
                                 whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(0, 212, 255, 0.5)" }}
                                 whileTap={{ scale: 0.95 }}
-                                className="flex items-center gap-3 px-8 py-4 bg-accent text-background rounded-full font-bold hover:bg-cyan-400 transition-all shadow-[0_0_20px_rgba(0,212,255,0.3)] relative group"
+                                className="flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 bg-accent text-background rounded-full font-bold hover:bg-cyan-400 transition-all shadow-[0_0_20px_rgba(0,212,255,0.3)] relative group"
                             >
                                 <span>View Work</span>
                                 <ExternalLink size={20} className="group-hover:translate-x-1 transition-transform" />

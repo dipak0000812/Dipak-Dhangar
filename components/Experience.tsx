@@ -42,7 +42,7 @@ const Experience = () => {
                                         variants={fadeInUp}
                                         className={`w-full md:w-1/2 pl-12 md:pl-0 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}
                                     >
-                                        <div className="glass-card p-6 rounded-2xl relative hover:-translate-y-2 transition-transform duration-300 group hover:shadow-lg hover:shadow-accent/10 border border-white/5">
+                                        <div className="glass-card p-5 md:p-6 rounded-2xl relative hover:-translate-y-2 transition-transform duration-300 group hover:shadow-lg hover:shadow-accent/10 border border-white/5">
                                             <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-accent border border-accent/20 rounded-full bg-accent/5">
                                                 {exp.type}
                                             </span>

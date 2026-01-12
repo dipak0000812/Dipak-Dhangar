@@ -39,8 +39,8 @@ const Skills = () => {
                                     <h3 className="text-2xl font-bold">{category.title}</h3>
                                 </div>
 
-                                <div className="glass-card p-8 rounded-2xl border-white/5">
-                                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                                <div className="glass-card p-5 md:p-8 rounded-2xl border-white/5">
+                                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
                                         {category.skills.map((skill, index) => (
                                             <motion.div
                                                 key={index}
