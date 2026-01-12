@@ -13,10 +13,10 @@ const Contact = () => {
     const [errorMessage, setErrorMessage] = useState("");
 
     // EmailJS Configuration
-    const SERVICE_ID = "service_j0wmq1";
-    const TEMPLATE_ID = "dservice_j0wmq1d"; // Using the value provided, though it looks like a typo.
-    // If this fails, the user needs to check their Template ID.
-    const PUBLIC_KEY = "o_aqzYdrydc7ULYCh";
+    // EmailJS Configuration
+    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_j0wmq1";
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "dservice_j0wmq1d";
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "o_aqzYdrydc7ULYCh";
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
