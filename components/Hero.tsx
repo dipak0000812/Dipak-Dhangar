@@ -106,7 +106,7 @@ const Hero = () => {
             </motion.div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 pt-20">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
 
                     <div className="space-y-8">
                         <motion.div
@@ -213,7 +213,7 @@ const Hero = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="relative flex justify-center lg:justify-end items-center h-full min-h-[400px] lg:min-h-[600px] perspective-1000 mt-12 lg:mt-0"
+                        className="relative flex justify-center md:justify-end items-center h-full min-h-[400px] lg:min-h-[600px] perspective-1000 mt-12 md:mt-0"
                     >
                         <motion.div
                             animate={{
