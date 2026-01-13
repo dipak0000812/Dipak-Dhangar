@@ -133,7 +133,8 @@ export const projectsData: Project[] = [
         image: "/assets/projects/portfolio-screenshot.png",
         tags: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
         links: [
-            { type: "github", label: "GitHub", url: "https://github.com/dipak0000812/Dipak-Portfolio" }
+            { type: "github", label: "GitHub", url: "https://github.com/dipak0000812/Dipak-Dhangar" },
+            { type: "live", label: "Live Demo", url: "https://dipak-dhangar.vercel.app/" }
         ]
     },
     {
