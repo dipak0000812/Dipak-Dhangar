@@ -32,13 +32,13 @@ const HorizontalProjectCard = ({ project, index }: HorizontalProjectCardProps) =
         >
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-0">
                 {/* Image Side */}
-                <div className={`lg:col-span-3 h-64 md:h-auto min-h-[300px] relative overflow-hidden group hover:brightness-110 transition-all ${project.image.startsWith('/') ? 'bg-gray-900 border-r border-white/5' : `bg-gradient-to-br ${project.image}`}`}>
+                <div className={`lg:col-span-3 h-48 sm:h-64 md:h-auto min-h-[250px] relative overflow-hidden group hover:brightness-110 transition-all ${project.image.startsWith('/') ? 'bg-black/50 border-r border-white/5' : `bg-gradient-to-br ${project.image}`}`}>
                     {project.image.startsWith('/') ? (
                         <Image
                             src={project.image}
                             alt={project.title}
                             fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            className="object-contain md:object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                     ) : (
                         <>

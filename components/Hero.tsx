@@ -213,7 +213,7 @@ const Hero = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="relative flex justify-center lg:justify-end items-center h-full min-h-[600px] perspective-1000"
+                        className="relative flex justify-center lg:justify-end items-center h-full min-h-[400px] lg:min-h-[600px] perspective-1000 mt-12 lg:mt-0"
                     >
                         <motion.div
                             animate={{
@@ -225,7 +225,7 @@ const Hero = () => {
                                 ease: "easeInOut"
                             }}
                             whileHover={{ scale: 1.02, rotateY: 5 }}
-                            className="relative w-full max-w-[420px] h-[520px] z-10"
+                            className="relative w-full max-w-[300px] sm:max-w-[380px] lg:max-w-[420px] h-[380px] sm:h-[480px] lg:h-[520px] z-10"
                         >
                             <div className="absolute inset-0 bg-gradient-to-tr from-accent to-purple-600 rounded-3xl blur-[2px] opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
 
