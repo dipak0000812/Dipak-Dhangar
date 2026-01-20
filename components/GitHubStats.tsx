@@ -19,17 +19,24 @@ const GitHubStats = () => {
     useEffect(() => {
         const fetchStats = async () => {
             try {
-                const response = await fetch("https://api.github.com/users/dipak0000812");
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+                const response = await fetch("https://api.github.com/users/dipak0000812", {
+                    signal: controller.signal
+                });
+                clearTimeout(timeoutId);
+
                 if (response.ok) {
                     const data = await response.json();
                     setStats({
-                        repos: data.public_repos,
-                        followers: data.followers,
-                        following: data.following
+                        repos: data.public_repos || 25,
+                        followers: data.followers || 10,
+                        following: data.following || 5
                     });
                 }
-            } catch (error) {
-                console.error("Failed to fetch GitHub stats", error);
+            } catch {
+                // Silently fail and use default stats - no console error
             }
         };
         fetchStats();
