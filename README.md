@@ -59,3 +59,4 @@ Follow the [DEPLOYMENT.md](./DEPLOYMENT.md) guide for detailed instructions on d
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+Minor workflow validation update.
