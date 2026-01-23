@@ -20,8 +20,6 @@ export const skillsData: SkillCategory[] = [
             { name: "JavaScript", level: 90, image: "https://cdn.simpleicons.org/javascript" },
             { name: "TypeScript", level: 85, image: "https://cdn.simpleicons.org/typescript" },
             { name: "Rust", level: 60, image: "https://cdn.simpleicons.org/rust" },
-            { name: "C++", level: 80, image: "https://cdn.simpleicons.org/cplusplus" },
-            { name: "Solidity", level: 65, image: "https://cdn.simpleicons.org/solidity" }
         ]
     },
     {
@@ -39,24 +37,24 @@ export const skillsData: SkillCategory[] = [
         title: "Backend & Systems",
         icon: Server,
         skills: [
-            { name: "Node.js", level: 85, image: "https://cdn.simpleicons.org/nodedotjs" },
-            { name: "Express.js", level: 85, image: "https://cdn.simpleicons.org/express/white" },
-            { name: "FastAPI", level: 75, image: "https://cdn.simpleicons.org/fastapi" },
-            { name: "Flask", level: 80, image: "https://cdn.simpleicons.org/flask/white" },
+            { name: "Node.js", level: 70, image: "https://cdn.simpleicons.org/nodedotjs" },
+            { name: "Express.js", level: 70, image: "https://cdn.simpleicons.org/express/white" },
+            { name: "Go", level: 90, image: "https://cdn.simpleicons.org/go" },
             { name: "Docker", level: 70, image: "https://cdn.simpleicons.org/docker" },
-            { name: "MongoDB", level: 85, image: "https://cdn.simpleicons.org/mongodb" }
+            { name: "MongoDB", level: 80, image: "https://cdn.simpleicons.org/mongodb" },
+            { name: "PostgreSQL", level: 85, image: "https://cdn.simpleicons.org/PostgreSQL" }
         ]
     },
     {
         title: "AI & Machine Learning",
         icon: Cpu,
         skills: [
-            { name: "Scikit-learn", level: 90, image: "https://cdn.simpleicons.org/scikitlearn" },
-            { name: "TensorFlow", level: 75, image: "https://cdn.simpleicons.org/tensorflow" },
-            { name: "PyTorch", level: 70, image: "https://cdn.simpleicons.org/pytorch" },
-            { name: "Hugging Face", level: 75, image: "https://cdn.simpleicons.org/huggingface" },
-            { name: "OpenCV", level: 70, image: "https://cdn.simpleicons.org/opencv" },
-            { name: "Google Earth Engine", level: 65, image: "https://cdn.simpleicons.org/googleearth" }
+            { name: "Scikit-learn", level: 80, image: "https://cdn.simpleicons.org/scikitlearn" },
+            { name: "Numpy", level: 85, image: "https://cdn.simpleicons.org/Numpy" },
+            { name: "Pandas", level: 90, image: "https://cdn.simpleicons.org/Pandas" },
+            { name: "Hugging Face", level: 50, image: "https://cdn.simpleicons.org/huggingface" },
+            { name: "OpenCV", level: 40, image: "https://cdn.simpleicons.org/opencv" },
+            { name: "Google Earth Engine", level: 50, image: "https://cdn.simpleicons.org/googleearth" }
         ]
     },
     {

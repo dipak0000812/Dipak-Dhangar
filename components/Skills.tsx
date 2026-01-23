@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import { skillsData } from "../data/skills";
 
 const Skills = () => {
@@ -48,11 +48,12 @@ const Skills = () => {
                                                 className="flex flex-col items-center gap-4 group cursor-pointer p-4 rounded-xl bg-white/5 border border-white/5 hover:border-accent/30 transition-all hover:bg-white/10"
                                             >
                                                 <div className="relative w-10 h-10 grayscale group-hover:grayscale-0 transition-all duration-300">
-                                                    <Image
+                                                    {/* Using standard img tag for external SVGs to avoid Next.js optimization issues with simpleicons CDN */}
+                                                    <img
                                                         src={skill.image}
                                                         alt={skill.name}
-                                                        fill
-                                                        className="object-contain"
+                                                        className="w-full h-full object-contain"
+                                                        loading="lazy"
                                                     />
                                                 </div>
 
